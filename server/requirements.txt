@@ -3,3 +3,4 @@ Flask==3.0.1
 flask_pymongo==2.3.0
 python-dotenv==1.0.0 
 Flask-Caching==2.1.0 
+Flask-Cors==1.10.3 
