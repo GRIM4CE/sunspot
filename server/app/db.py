@@ -16,8 +16,6 @@ def get_sunspot():
         cursor = db.sunspot_light.find({}, { 'timestamp': 1, 'lux': 1, '_id': 0})
         data_list = []
 
-        print(cursor)
-
         for doc in cursor:
             data_list.append(doc)
         

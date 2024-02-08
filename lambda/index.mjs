@@ -33,7 +33,9 @@ export const handler = async (event, context) => {
 
         const document = {
             timestamp: time,
-            lux: body.lux
+            lux: body.lux,
+            temperature: body.temperature,
+            humidity: body.humidity
         };
 
         const result = await collection.insertOne(document);

@@ -11,5 +11,20 @@ defineProps({
 </script>
 
 <template>
-    {{ data }}
+    <section  class="record-container">
+        <div class="record" v-for="lightRecord in data" :key="JSON.stringify(lightRecord.timestamp)">
+            {{ lightRecord.lux }}
+            {{ lightRecord.timestamp }}
+        </div>
+    </section>
 </template>
+
+<style lang="scss">
+    .record-container {
+        display: flex;
+    }
+    
+    .record {
+        display: grid;
+    }
+</style>
