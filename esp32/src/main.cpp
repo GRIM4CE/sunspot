@@ -1,5 +1,3 @@
-#include <SPI.h>
-#include <WiFi.h>
 #include <HTTPClient.h>
 #include <ErriezDHT22.h>
 
